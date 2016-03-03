@@ -4,11 +4,14 @@ ul.menu {
 	li {
 		display: inline;
 		margin-right: 10px;
+		font-size: 1.8rem;
 		a {
 			color: #333;
 			padding: 10px;
-			background: #333;
-			color: white;
+			text-transform: uppercase;
+			&:hover {
+				color: $aqua;
+			}
 		}
 	}
 }

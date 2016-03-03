@@ -22,7 +22,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'social' => 'Social Navigation'
 	) );
 
 	/*
@@ -175,6 +176,17 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	$footerWidgetArea = array(
+		'name' => 'Footer Widget Area',
+		'id' => 'footer-widget-area',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	);
+
+	register_sidebar($footerWidgetArea);
+
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
@@ -276,3 +288,11 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+/* hackeryou_get_thumbnail_url: Return current post thumbnail url */
+
+function hackeryou_get_thumbnail_url( $post ) {
+	$imageID = get_post_thumbnail_id($post->ID);
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
+} 
