@@ -8,4 +8,14 @@
 			list-style: none;
 		}
 	}
+	input {
+		border: 1px solid $aqua;
+		border-radius: 2px;
+		padding: 2%;
+		&[type='submit'] {
+			background: $aqua;
+			color: $softWhite;
+			font-family: $baseFont;
+		}
+	}
 }

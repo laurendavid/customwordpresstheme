@@ -1,8 +1,8 @@
 h1 {
 	font-family: $headingFont;
-	font-size: 6rem;
+	font-size: 7rem;
 	color: lighten($aqua, 5%);
-	text-shadow: 1px 1px 1px $softBlack;
+	text-shadow: 2px 2px 2px $softBlack;
 	letter-spacing: 10px;
 }
 
@@ -33,7 +33,7 @@ a {
 p {
 	line-height: 1.8;
 	font-family: $baseFont;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 }
 
 /*blockquotes*/
@@ -71,6 +71,10 @@ dd {
 }
 
 /*lists*/
+
+ul {
+	padding: 0;
+}
 
 ul li, ol li {
 	padding: 3px;

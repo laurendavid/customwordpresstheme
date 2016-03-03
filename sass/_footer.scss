@@ -1,4 +1,33 @@
 footer {
 	clear: both;
+	max-width: 100%;
+	text-align: center;
+	.widgets {
+		width: 100%;
+		padding: 5% 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.footer-widget {
+			margin: 0 3%;
+			ul li {
+				text-align: left;
+			}
+		}
+	}
+	.menu-social-media-links-container {
+		max-width: 100%;
+		padding: 1%;
+		text-align: center;
+		background: $aqua;
+		.fa {
+			font-size: 2rem;
+			color: $aqua;
+			background: $softWhite;
+			padding: 1%;
+			border: 1px solid $softWhite;
+			border-radius: 50%;
+		}
+	}
 }
 

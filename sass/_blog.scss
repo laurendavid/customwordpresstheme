@@ -1,0 +1,9 @@
+.blog-wrapper {
+	width: 70%;
+	padding: 1%;
+	.post {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+}

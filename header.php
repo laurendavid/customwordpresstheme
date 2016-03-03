@@ -6,9 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
-  <!-- stylesheets should be enqueued in functions.php -->
+  <!-- Google Fonts enqueued in functions.php -->
+  <!-- stylesheets enqueued in functions.php -->
   <?php wp_head(); ?>
 </head>
 

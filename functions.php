@@ -47,6 +47,8 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	// wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700' rel='stylesheet' type='text/css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -56,8 +58,8 @@ of writing our own script tags in the header and footer. */
 
 function hackeryou_scripts() {
 
-	//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
-	wp_deregister_script('jquery');
+//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
+  wp_deregister_script('jquery');
   wp_enqueue_script(
   	'jquery',
   	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",

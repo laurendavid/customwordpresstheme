@@ -1,13 +1,15 @@
 <footer>
-  <div class="wrapper">
-    <?php dynamic_sidebar('footer-widget-area') ?>
-    
+	<div class="wrapper">
+		<div class="widgets">
+	    	<?php dynamic_sidebar('footer-widget-area') ?>
+	    </div>
+	</div>
+
 	<?php wp_nav_menu(array(
-		'theme_location' => 'social'
+	'theme_location' => 'social'
 	)); ?>
     
     <p>&copy; <?php echo date('Y'); ?></p>
-  </div>
 </footer>
 
 <script>
