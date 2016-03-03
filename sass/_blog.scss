@@ -1,9 +1,20 @@
-.blog-wrapper {
-	width: 70%;
-	padding: 1%;
-	.post {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+.post {
+	padding: 3% 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	.image {
+		width: 100%;
+	}
+	.text {
+		width: 100%;
+		text-align: left;
+		padding: 1% 2%;
+		h2 {
+			font-family: $headingFont;
+			color: $aqua;
+			font-style: italic;
+			text-align: center;
+		}
 	}
 }

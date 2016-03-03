@@ -9,13 +9,16 @@
 		}
 	}
 	input {
+		margin-top: 5%;
 		border: 1px solid $aqua;
 		border-radius: 2px;
 		padding: 2%;
+		outline: 0;
 		&[type='submit'] {
 			background: $aqua;
 			color: $softWhite;
 			font-family: $baseFont;
+			letter-spacing: 1px;
 		}
 	}
 }

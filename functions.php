@@ -48,7 +48,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	// wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700' rel='stylesheet' type='text/css');
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -137,7 +137,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">Read More <span class="meta-nav">&rarr;</span></a>';
 }
 
 /**
