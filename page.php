@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
 <div class="main">
-  <div class="container">
+  <div class="wrapper">
 
     <div class="content">
       <?php // Start the loop ?>
@@ -13,9 +13,9 @@
       <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
 
-    <?php get_sidebar(); ?>
+    <?php dynamic_sidebar('contact-widget-area') ?>
 
-  </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

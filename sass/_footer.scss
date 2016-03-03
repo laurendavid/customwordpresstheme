@@ -9,7 +9,12 @@ footer {
 		flex-flow: row wrap;
 		justify-content: center;
 		.footer-widget {
-			margin: 0 3%;
+			margin: 0 2%;
+			width: 25%;
+			border: 1px solid $aqua;
+			border-radius: 1px;
+			box-shadow: 1px 1px 3px lighten($aqua, 10%);
+			padding: 1%;
 			ul li {
 				text-align: left;
 			}

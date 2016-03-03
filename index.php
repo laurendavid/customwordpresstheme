@@ -12,8 +12,10 @@
               <?php the_post_thumbnail('large'); ?>
             </div>
             <div class="text">
-              <h2><?php the_title(); ?></h2>
-         	  <h3><?php the_author(); ?></h3>
+              <h2>
+              	<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"><?php the_title(); ?></a>
+              </h2>
+         	  <h3>Posted on <span><?php the_time('F j, Y'); ?></span> by <span><?php the_author(); ?></span></h3>	
               <?php the_excerpt(); ?>
               <?php hackeryou_continue_reading_link(); ?> 
             </div>

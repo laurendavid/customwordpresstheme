@@ -189,6 +189,18 @@ function hackeryou_widgets_init() {
 
 	register_sidebar($footerWidgetArea);
 
+	$contactWidgetArea = array(
+		'name' => 'Contact Widget Area',
+		'id' => 'contact-widget-area',
+		'description' => 'The contact page widget area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		);
+
+	register_sidebar($contactWidgetArea);
+
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
