@@ -19,10 +19,11 @@ h3 {
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 1px lighten($softBlack, 45%);
 }
 
 a {
-	color: darken($aqua, 15%);
+	color: $aqua;
 	text-decoration: none;
 	&:hover {
 		color: darken($aqua, 25%);

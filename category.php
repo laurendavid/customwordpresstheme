@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="wrapper">
     <div class="content">
-      <h1>Category Archives: <?php single_cat_title(); ?></h1>
+      <h2>Category Archives: <?php single_cat_title(); ?></h2>
     	<?php
     		$category_description = category_description();
     		if ( ! empty( $category_description ) )
@@ -15,7 +15,7 @@
 
     <?php get_sidebar(); ?>
 
-  </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

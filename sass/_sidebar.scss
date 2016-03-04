@@ -9,7 +9,6 @@
 		}
 	}
 	input {
-		margin-top: 5%;
 		border: 1px solid $aqua;
 		border-radius: 2px;
 		padding: 2%;
@@ -22,16 +21,20 @@
 		}
 	}
 	.widget-title {
-		margin: 10% 0;
+		margin: 5% 0;
 	}
 	.tagcloud {
 		width: 65%;
+		font-size: 3rem;
 		a {
-			background: $aqua;
 			color: $softWhite;
-			padding: 2%;
-			margin-top: 1%;
-			font-size: 1.6rem;
+			font-family: $baseFont;
+			text-transform: uppercase;
+			background: darken($aqua, 10%);
+			padding: 3%;
+			font-size: 14px;
+			border-radius: 1px;
+			box-shadow: 1px 1px 1px lighten($softBlack, 30%);
 		}
 	}
 }

@@ -15,13 +15,15 @@
 <?php // if there are posts, Start the Loop. ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+			<?php the_post_thumbnail('large'); ?>
+			
 			<h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?>
-        </a>
-      </h2>
+        		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+          			<?php the_title(); ?>
+        		</a>
+      		</h2>
 
 			<section class="entry-content">
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>

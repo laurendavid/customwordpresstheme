@@ -9,7 +9,7 @@
 	'theme_location' => 'social'
 	)); ?>
     
-    <p>&copy; <?php echo date('Y'); ?></p>
+    <p>&copy; <?php echo date('Y'); ?> | Coded by <a href="http://laurendavid.ca">Lauren David</a></p>
 </footer>
 
 <script>

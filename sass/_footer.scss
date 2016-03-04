@@ -1,7 +1,6 @@
 footer {
 	clear: both;
 	max-width: 100%;
-	text-align: center;
 	.widgets {
 		width: 100%;
 		padding: 5% 0;
@@ -11,28 +10,48 @@ footer {
 		.footer-widget {
 			margin: 0 2%;
 			width: 25%;
-			border: 1px solid $aqua;
+			text-align: center;
+			border: 2px solid lighten($softBlack, 35%);
 			border-radius: 1px;
-			box-shadow: 1px 1px 3px lighten($aqua, 10%);
+			box-shadow: 1px 1px 3px lighten($softBlack, 40%);
 			padding: 1%;
+			h3 {
+				display: inline-block;
+				padding-bottom: 1%;
+				border-bottom: 2px solid lighten($aqua, 5%);
+			}
 			ul li {
 				text-align: left;
+				padding: 3% 0;
+			}
+			span.post-date {
+				font-size: 1.2rem;
+				font-style: italic;
+				color: lighten($softBlack, 15%);
 			}
 		}
 	}
 	.menu-social-media-links-container {
 		max-width: 100%;
-		padding: 1%;
+		padding: 1.5%;
 		text-align: center;
 		background: $aqua;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.menu {
+			width: 100%;
+		}
 		.fa {
 			font-size: 2rem;
-			color: $aqua;
-			background: $softWhite;
+			color: $softWhite;
+			background: fade-out($softBlack, 0.5);
 			padding: 1%;
-			border: 1px solid $softWhite;
 			border-radius: 50%;
 		}
+	}
+	p {
+		text-align: center;
 	}
 }
 
