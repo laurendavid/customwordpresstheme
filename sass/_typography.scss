@@ -10,6 +10,7 @@ h2 {
 	font-family: $headingFont;
 	font-size: 3rem;
 	color: $softBlack;
+	letter-spacing: 3px;
 }
 
 h3 {
@@ -91,6 +92,25 @@ pre {
 	padding: 10px;
 	border-radius: 4px;
 	border: 1px solid #ccc;
+}
+
+/*form inputs*/
+
+input {
+	border: 1px solid $aqua;
+	border-radius: 2px;
+	padding: 10px;
+	outline: 0;
+	margin-right: 1%;
+}
+
+input.searchsubmit {
+	margin-top: 3%;
+	background: $aqua;
+	border: 0;
+	color: $softWhite;
+	font-family: $baseFont;
+	letter-spacing: 1px;
 }
 
 

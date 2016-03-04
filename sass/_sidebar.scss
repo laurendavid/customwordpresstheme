@@ -24,4 +24,14 @@
 	.widget-title {
 		margin: 10% 0;
 	}
+	.tagcloud {
+		width: 65%;
+		a {
+			background: $aqua;
+			color: $softWhite;
+			padding: 2%;
+			margin-top: 1%;
+			font-size: 1.6rem;
+		}
+	}
 }
