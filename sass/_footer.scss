@@ -7,14 +7,22 @@ footer {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		@media (max-width: 767px) {
+			display: none;
+		}
 		.footer-widget {
 			margin: 0 2%;
 			width: 25%;
-			text-align: center;
-			border: 2px solid lighten($softBlack, 35%);
-			border-radius: 1px;
-			box-shadow: 1px 1px 3px lighten($softBlack, 40%);
-			padding: 1%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			background: fade-out($aqua, 0.7);
+			border-radius: 3px;
+			padding: 2%;
+			@media (max-width: 940px) {
+				width: 50%;
+				margin: 3%;
+			}
 			h3 {
 				display: inline-block;
 				padding-bottom: 1%;
@@ -33,21 +41,67 @@ footer {
 	}
 	.menu-social-media-links-container {
 		max-width: 100%;
-		padding: 1.5%;
+		padding: 1%;
 		text-align: center;
-		background: $aqua;
+		background: lighten($aqua, 10%);
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		@media (max-width: 767px) {
+			padding: 2%;
+		}
 		.menu {
 			width: 100%;
+			li {
+				@media (max-width: 940px) {
+					margin: 0 1%;
+				}
+			}
 		}
 		.fa {
 			font-size: 2rem;
 			color: $softWhite;
-			background: fade-out($softBlack, 0.5);
+			background: darken($aqua, 20%);
 			padding: 1%;
 			border-radius: 50%;
+			@media (max-width: 767px) {
+				font-size: 2.5rem;
+				padding: 1.5%;
+			}
+		}
+	}
+	// Flickity
+	.gallery {
+		max-width: 100%;
+		height: 250px;
+		.gallery-cell {
+			width: 25%;
+			height: 100%;
+			@media (max-width: 940px) {
+				width: 50%;
+			}
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		.flickity-prev-next-button.previous {
+    		left: 30px;
+    		.arrow {
+    			fill: darken($aqua, 25%);
+    		}
+    		&:hover {
+    			background: fade-out($aqua, 0.2);
+    		}
+		}
+		.flickity-prev-next-button.next {
+    		right: 30px;
+    		.arrow {
+    			fill: darken($aqua, 20%);
+    		}
+    		&:hover {
+    			background: fade-out($aqua, 0.2);
+    		}
 		}
 	}
 	p {

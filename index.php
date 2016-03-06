@@ -7,7 +7,6 @@
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
           <article class="post">
             <div class="image">
-             
               <!-- Image goes here -->
               <?php the_post_thumbnail('large'); ?>
             </div>

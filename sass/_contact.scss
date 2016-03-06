@@ -1,18 +1,33 @@
 .hero2 {
 	width: 100%;
-	height: 75vh;
+	height: 90vh;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	margin-top: 2%;
+	@media (max-width: 940px) {
+		height: 70vh;
+	}
 }
-
-.page form .searchsubmit {
-	margin: 0;
-} 
 
 // All Contact Sidebar Widgets
 .widget-container {
 	margin: 5% 0;
+	@media (max-width: 767px) {
+		width: 50%;
+		float: left;
+		text-align: center;
+		h3 {
+			margin-top: 1.5%;
+			font-size: 2.2rem;
+			display: inline-block;
+			padding-bottom: 1%;
+			border-bottom: 2px solid $aqua;
+		}
+		a {
+			font-size: 2rem;
+		}
+	}
 }
 
 // Social Media Menu Icons
@@ -33,6 +48,16 @@
 			color: $softWhite;
 			background: $softBlack;
 		}
+		@media (max-width: 767px) {
+			font-size: 2.5rem;
+			padding: 3%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.content h2 {
+		text-align: center;
 	}
 }
 
@@ -48,11 +73,23 @@
 	input {
 		width: 80%; 
 		margin-top: 1%;
+		@media (max-width: 940px) {
+			width: 90%;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 	textarea {
 		width: 80%; 
 		border: 1px solid $aqua;
 		outline: 0;
+		@media (max-width: 940px) {
+			width: 90%;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 	input[type=submit] {
 		background: $softBlack;

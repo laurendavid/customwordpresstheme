@@ -1,6 +1,13 @@
 .sidebar {
 	width: 30%;
 	float: left;
+	@media (max-width: 940px) {
+		width: 35%;
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		display: none;
+	}
 	ul {
 		margin: 0;
 		padding: 0;
@@ -26,6 +33,10 @@
 	.tagcloud {
 		width: 65%;
 		font-size: 3rem;
+		@media (max-width: 940px) {
+			width: 100%;
+			padding: 2% 5%;
+		}
 		a {
 			color: $softWhite;
 			font-family: $baseFont;
@@ -35,6 +46,9 @@
 			font-size: 14px;
 			border-radius: 1px;
 			box-shadow: 1px 1px 1px lighten($softBlack, 30%);
+			@media (max-width: 940px) {
+				padding: 2%;
+			}
 		}
 	}
 }

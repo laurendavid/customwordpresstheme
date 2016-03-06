@@ -1,9 +1,14 @@
 $(function() {
-	$('nav a').smoothScroll({
-		offset: -10,
-		speed: 500
-	});
-	
 	console.log("It's working");
+	$('.gallery').flickity({
+		pageDots: false,
+		setGallerySize: false,
+		cellAlign: 'left',
+		freeScroll: true,
+		wrapAround: true
+	});
 
 });
+
+
+

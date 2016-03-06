@@ -67,7 +67,7 @@ function hackeryou_scripts() {
   	null, //version number
   	true //load in footer
   );
-
+  
   wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
@@ -77,12 +77,21 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+      'flickity', //handle
+      get_template_directory_uri() . '/js/flickity.pkgd.min.js', //source
+      false, //dependencies
+      null, // version number
+      true //load in footer
+   ); 
+
+  wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
     null, // version number
     true //load in footer
   );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
@@ -137,7 +146,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Read More <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">Read More <span class="meta-nav"></span></a>';
 }
 
 /**
