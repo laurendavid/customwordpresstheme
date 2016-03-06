@@ -13,6 +13,9 @@ ul.menu {
 				color: darken($aqua, 25%);
 				text-shadow: 1px 1px 1px lighten($softBlack, 20%);
 			}
+			@media (max-width: 480px) {
+				padding: 5px;
+			}
 		}
 	}
 }

@@ -4,6 +4,10 @@ h1 {
 	color: lighten($aqua, 5%);
 	text-shadow: 2px 2px 2px $softBlack;
 	letter-spacing: 10px;
+	@media (max-width: 480px) {
+		font-size: 5rem;
+		text-align: center;
+	}
 }
 
 h2 {

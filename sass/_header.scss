@@ -3,5 +3,8 @@ header {
 	padding: 1%;
 	.logo {
 		margin: 2% auto;
+		@media (max-width: 767px) {
+			margin: 4% auto;
+		}
 	}
 }

@@ -16,6 +16,9 @@
 		background-position: center 80px;
 		margin-bottom: 0;
 	}
+	@media (max-width: 480px) {
+		margin-top: 5%;
+	}
 }
 
 .about {
@@ -31,7 +34,9 @@
 	flex-flow: row wrap;
 	justify-content: center;
 	@media (max-width: 940px) {
-		flex-flow: column wrap;
+		flex-flow: column;
+		align-content: center;
+		align-items: center;
 	}
 }
 

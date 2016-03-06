@@ -5,6 +5,11 @@
 	justify-content: center;
 	.image {
 		width: 100%;
+		@media (max-width: 480px) {
+			img {
+				height: 300px;
+			}
+		}
 	}
 	.text {
 		width: 100%;
